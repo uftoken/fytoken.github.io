@@ -51,14 +51,14 @@ function updatePage(stats) {
     if (stats.totalContribution.toNumber() <= 0) {
         $("#total-ether-message").text("Looks like noone like to share happines :C.");
     } else {
-        $("#total-ether-message").text("Yay! Looks like someone is not indifferent!");
+        $("#total-ether-message").text("Looks like someone's going to get Fucked!");
     }
 
     $("#total-usd").text("$" + stats.totalContributionUSD.toFixed(0));
     if (stats.totalContributionUSD.toNumber() <= 0) {
         $("#total-usd-message").text("No Ether yet, so no cash either.");
     } else if (stats.totalContributionTVs.toNumber() < 1) {
-        $("#total-usd-message").text("Not enough to pay back depts yet but that's a start");
+        $("#total-usd-message").text("Good start to the moon!");
     }else if (stats.totalContributionTVs.toNumber() < 2) {
         $("#total-usd-message").text("Enough to pay something back.");
     } else {
@@ -69,7 +69,7 @@ function updatePage(stats) {
     if (stats.totalSupply <= 0) {
         $("#total-tokens-message").text("No SAD tokens issued yet .");
     } else if (stats.totalBonusTokensIssued.toNumber() <= 0) {
-        $("#total-tokens-message").text("Look at all that FKT issued!");
+        $("#total-tokens-message").text("Fuck 'em all!");
     } else {
         $("#total-tokens-message").text("Including " + stats.totalBonusTokensIssued.toFixed(3) + " bonus despair!");
     }
