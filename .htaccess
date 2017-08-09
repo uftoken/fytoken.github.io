@@ -1,1 +1,4 @@
-
+RewriteEngine On
+RewriteCond %{SERVER_PORT} ^443$ [OR]
+RewriteCond %{HTTPS} =on
+RewriteRule ^(.*)$ http://fytoken.com/$1 [R=301,L]
