@@ -1,0 +1,10 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page1332058.html
+
+RewriteEngine On
+
+RewriteRule ^fkt$ page1332154.html [NC]
+RewriteRule ^fkt/$ page1332154.html [NC]
+
