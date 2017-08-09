@@ -69,7 +69,7 @@ function updatePage(stats) {
     if (stats.totalSupply <= 0) {
         $("#total-tokens-message").text("No SAD tokens issued yet .");
     } else if (stats.totalBonusTokensIssued.toNumber() <= 0) {
-        $("#total-tokens-message").text("Look at all that SAD issued!");
+        $("#total-tokens-message").text("Look at all that FKT issued!");
     } else {
         $("#total-tokens-message").text("Including " + stats.totalBonusTokensIssued.toFixed(3) + " bonus despair!");
     }
