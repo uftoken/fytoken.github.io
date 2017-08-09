@@ -22,7 +22,7 @@ function decodeStats(response, price) {
 }
 
 function getStats(price) {
-    var url = "https://api.etherscan.io/api?module=proxy&action=eth_call&to=0x8aa7fb11ed6893c8fea046a7f847fb834d9a9133&data=0xc59d48470000000000000000000000000000000000000000000000000000000000000000&tag=latest";
+    var url = "https://api.etherscan.io/api?module=proxy&action=eth_call&to=0xce46f8562eae3b1d7632be1e6da0553a2796a404&data=0xc59d48470000000000000000000000000000000000000000000000000000000000000000&tag=latest";
     return $.ajax(url, {
         cache: false,
         dataType: "json"
