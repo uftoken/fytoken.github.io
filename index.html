@@ -97,6 +97,7 @@ function refresh() { getPrice().then(getStats).then(updatePage); }
 
   ga('create', 'UA-104329057-1', 'auto');
   ga('send', 'pageview');
+  ga('set', 'userId', {{USER_ID}}); // Задание идентификатора пользователя с помощью параметра user_id (текущий пользователь).
 
 </script>
 </body></html>
